@@ -1,0 +1,9 @@
+div *{
+    margin: 10px;
+}
+div button{
+    background-color: #646cff;
+}
+div button:hover{
+    background-color: #535bf2;
+}
