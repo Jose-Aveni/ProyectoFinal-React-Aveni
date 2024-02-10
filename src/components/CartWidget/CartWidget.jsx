@@ -1,9 +1,11 @@
 import { useCart } from "../../context/CartContext";
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
   const { totalQuantity } = useCart();
 
   return (
+    <Link to='/cart'>
     <div style={{ position: "absolute", right: '120px', top: '45px'}}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +20,7 @@ const CartWidget = () => {
       </svg>
       {totalQuantity}
     </div>
+    </Link>   
   );
 };
 
